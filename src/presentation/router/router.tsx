@@ -1,5 +1,5 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
-import { OrthographyPage, ProsConsPage, ProsConsStreamPage, TranslatePage, TextToAudioPage, ImageGenerationPage, ImageTunningPage, AudioToTextPage, AssistantPage } from "../pages";
+import { OrthographyPage, ProsConsPage, ProsConsStreamPage, TranslatePage, TextToAudioPage, ImageGenerationPage, ImageTunningPage, AudioToTextPage, AssistantPage, SarcasticModePage, ExplainCodePage } from "../pages";
 import { DashboardLayout } from "../layouts";
 
 
@@ -66,6 +66,20 @@ export const menuRoutes = [
     title: "Asistente",
     description: "Información del asistente",
     component: <AssistantPage />,
+  },
+  {
+    to: "/sarcastic",
+    icon: "fa-solid fa-face-laugh-squint",
+    title: "Modo Sarcastrico",
+    description: "Respuestas curiosas y divertidas",
+    component: <SarcasticModePage />,
+  },
+  {
+    to: "/code",
+    icon: "fa-solid fa-code",
+    title: "Explicación de codigo",
+    description: "Explicación de piezas de codigo",
+    component: <ExplainCodePage />,
   },
 ];
 export const router = createBrowserRouter([

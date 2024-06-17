@@ -10,7 +10,7 @@ export const DashboardLayout = () => {
           <h1 className="font-bold text-lg lg:text-3xl bg-gradient-to-br from-indigo-700 via-indigo-200 bg-clip-text text-transparent text-center">
             BrainWave
           </h1>
-          <span className="text-xl">Bienvenido!!</span>
+          <span className="text-xl text-center">Bienvenido!!</span>
           <div className="border-gray-700 border my-3" />
           {menuRoutes.map((option) => (
             <SidebarItem key={option.to} {...option} />

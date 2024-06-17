@@ -4,9 +4,10 @@ interface Props {
   to: string;
   icon: string;
   title: string;
+  description: string;
 }
 
-export const SidebarItem = ({ to, icon, title }: Props) => {
+export const SidebarItem = ({ to, icon, title, description }: Props) => {
   return (
     <NavLink
       to={to}
@@ -19,6 +20,7 @@ export const SidebarItem = ({ to, icon, title }: Props) => {
       <i className={`${icon} text-2xl mr-4 text-white`}></i>
       <div className="flex flex-col flex-grow">
         <span className="text-white text-md">{title}</span>
+        <span className="text-white text-xs">{description}</span>
       </div>
     </NavLink>
   );
