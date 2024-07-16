@@ -1,5 +1,5 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
-import { OrthographyPage, ProsConsPage, ProsConsStreamPage, TranslatePage, TextToAudioPage, ImageGenerationPage, ImageTunningPage, AudioToTextPage, AssistantPage, SarcasticModePage, ExplainCodePage } from "../pages";
+import { OrthographyPage, ProsConsPage, ProsConsStreamPage, TranslatePage, TextToAudioPage, ImageGenerationPage, ImageTunningPage, AudioToTextPage,  SarcasticModePage, ExplainCodePage } from "../pages";
 import { DashboardLayout } from "../layouts";
 
 
@@ -40,6 +40,13 @@ export const menuRoutes = [
     component: <TextToAudioPage />,
   },
   {
+    to: "/audio-to-text",
+    icon: "fa-solid fa-comment-dots",
+    title: "Audio a texto",
+    description: "Convertir audio a texto",
+    component: <AudioToTextPage />,
+  },
+  {
     to: "/image-generation",
     icon: "fa-solid fa-image",
     title: "Imágenes",
@@ -52,20 +59,6 @@ export const menuRoutes = [
     title: "Editar imagen",
     description: "Generación continua",
     component: <ImageTunningPage />,
-  },
-  {
-    to: "/audio-to-text",
-    icon: "fa-solid fa-comment-dots",
-    title: "Audio a texto",
-    description: "Convertir audio a texto",
-    component: <AudioToTextPage />,
-  },
-  {
-    to: "/assistant",
-    icon: "fa-solid fa-user",
-    title: "Asistente",
-    description: "Información del asistente",
-    component: <AssistantPage />,
   },
   {
     to: "/sarcastic",
@@ -81,6 +74,14 @@ export const menuRoutes = [
     description: "Explicación de piezas de codigo",
     component: <ExplainCodePage />,
   },
+  // {
+  //   to: "/assistant",
+  //   icon: "fa-solid fa-user",
+  //   title: "Asistente",
+  //   description: "Información del asistente",
+  //   component: <AssistantPage />,
+  // },
+ 
 ];
 export const router = createBrowserRouter([
   {

@@ -16,7 +16,7 @@ export const DashboardLayout = () => {
             <SidebarItem key={option.to} {...option} />
           ))}
         </nav>
-        <section className="flex flex-col w-full h-[calc(100vh-50px)]  bg-slate-600 bg-opacity-25 p-5">
+        <section className="flex flex-col w-full  bg-slate-600 bg-opacity-25 p-5">
           <div className="flex flex-row h-full">
             <div className="flex flex-col flex-auto h-full p-1">
               <Outlet />
