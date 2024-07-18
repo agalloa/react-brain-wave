@@ -1,5 +1,5 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
-import { OrthographyPage, ProsConsPage, ProsConsStreamPage, TranslatePage, TextToAudioPage, ImageGenerationPage, ImageTunningPage, AudioToTextPage,  SarcasticModePage, ExplainCodePage } from "../pages";
+import { OrthographyPage, ProsConsPage, TranslatePage, TextToAudioPage, ImageGenerationPage, AudioToTextPage,  SarcasticModePage, ExplainCodePage } from "../pages";
 import { DashboardLayout } from "../layouts";
 
 
@@ -18,13 +18,13 @@ export const menuRoutes = [
     description: "Comparar pros y contras",
     component: <ProsConsPage />,
   },
-  {
-    to: "/pros-cons-stream",
-    icon: "fa-solid fa-water",
-    title: "Como stream",
-    description: "Con stream de mensajes",
-    component: <ProsConsStreamPage />,
-  },
+  // {
+  //   to: "/pros-cons-stream",
+  //   icon: "fa-solid fa-water",
+  //   title: "Como stream",
+  //   description: "Con stream de mensajes",
+  //   component: <ProsConsStreamPage />,
+  // },
   {
     to: "/translate",
     icon: "fa-solid fa-language",
@@ -53,13 +53,13 @@ export const menuRoutes = [
     description: "Generar imágenes",
     component: <ImageGenerationPage />,
   },
-  {
-    to: "/image-tunning",
-    icon: "fa-solid fa-wand-magic",
-    title: "Editar imagen",
-    description: "Generación continua",
-    component: <ImageTunningPage />,
-  },
+  // {
+  //   to: "/image-tunning",
+  //   icon: "fa-solid fa-wand-magic",
+  //   title: "Editar imagen",
+  //   description: "Generación continua",
+  //   component: <ImageTunningPage />,
+  // },
   {
     to: "/sarcastic",
     icon: "fa-solid fa-face-laugh-squint",

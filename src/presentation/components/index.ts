@@ -1,4 +1,6 @@
 export * from './chat-bubbles/BrainWaveMessages';
+export * from './chat-bubbles/BrainWaveMessagesImage';
+export * from './chat-bubbles/BrainWaveMessagesSelectableImage';
 export * from './chat-bubbles/BrainWaveMessagesAudio';
 export * from './chat-bubbles/BrainWaveOrthographyMessages';
 export * from './chat-bubbles/MyMessage';
